@@ -21,3 +21,10 @@ Enter the replacement:Dan
 """
 
 people = ['Alain','Brian','Chris','Justin','Angela','Rick']
+print(people)
+word1 = input("Choose a person from the list to replace:").strip()
+num = people.index(word1)
+people.pop(int(num))
+word2 = input("Enter the replacement:")
+people.insert(int(num),word2)
+print(people)
