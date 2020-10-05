@@ -28,10 +28,11 @@ x = ""
 List = []
 num = input("Enter an integer:").strip()
 List.append(num)
-while num != -1:
+while int(num) != -1:
     num = input("Enter an integer:").strip()
     List.append(num)
     List.sort()
     if int(num) == -1:
         break
-print("The largest number you entered is " + str(List[-1]))
+if int(num) == -1:
+    print("The largest number you entered is " + str(List[-1]))
