@@ -26,5 +26,5 @@ The animal at that index is Dog
 
 animals = ["Cat","Fish","Dog","Bear","Turtle"]
 animals.sort()
-num = input("Enter the index for an animal:")
+num = input("Enter the index for an animal:").strip()
 print("The animal at that index is " + animals[int(num)])
