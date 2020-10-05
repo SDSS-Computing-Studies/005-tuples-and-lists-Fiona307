@@ -24,7 +24,6 @@ Enter an integer:-1
 The largest number you entered is 92
 """
 
-x = ""
 List = []
 num = input("Enter an integer:").strip()
 List.append(num)
@@ -34,5 +33,4 @@ while int(num) != -1:
     List.sort()
     if int(num) == -1:
         break
-if int(num) == -1:
-    print("The largest number you entered is " + str(List[-1]))
+print("The largest number you entered is " + str(List[-1]))
