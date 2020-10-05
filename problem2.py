@@ -29,7 +29,8 @@ fruit = ["apple","cherry","kiwi","apple","banana","strawberry","kiwi","blueberry
 print(fruit)
 word = input("Enter a word form the list:")
 while word in fruit:
-    fruit.remove(word)
-else:
-    fruit.append(word)
+    if word in fruit:
+        fruit.remove(word)
+    else:
+        fruit.append(word)
 print(fruit)
