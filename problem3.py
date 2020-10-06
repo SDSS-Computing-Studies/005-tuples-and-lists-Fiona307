@@ -26,10 +26,10 @@ The largest number you entered is 92
 
 List = []
 num = input("Enter an integer:").strip()
-List.append(num)
+List.append(int(num))
 while int(num) != -1:
     num = input("Enter an integer:").strip()
-    List.append(num)
+    List.append(int(num))
     if int(num) == -1:
         break
 List.sort()
