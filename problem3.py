@@ -30,7 +30,7 @@ List.append(num)
 while int(num) != -1:
     num = input("Enter an integer:").strip()
     List.append(num)
-    List.sort()
     if int(num) == -1:
         break
+List.sort()
 print("The largest number you entered is " + str(List[-1]))
